@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia"
+		xmlns:local="clr-namespace:ChartAppAvalonia"
+        x:Class="ChartAppAvalonia.MainWindow"
+		x:DataType="local:MainWindowViewModel"
+        Title="OxyPlot avec Avalonia"
+        Width="600" Height="400">
+
+	<Grid>
+		<oxy:PlotView Model="{Binding MyModel, Mode=OneWay}" />
+	</Grid>
+</Window>
