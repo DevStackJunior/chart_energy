@@ -1,6 +1,10 @@
+using LiveChartsCore;
+using LiveChartsCore.Kernel.Sketches;
+using LiveChartsCore.SkiaSharpView;
 using OxyPlot;
 using OxyPlot.Series;
 using System;
+using System.Collections.Generic;
 
 namespace ChartAppAvalonia;
 
@@ -27,4 +31,6 @@ public class MainWindowViewModel
 
         MyModel.Series.Add(series);
     }
+        
+        
 }

@@ -1,4 +1,4 @@
-using Avalonia;
+ï»¿using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Avalonia.Styling;
@@ -14,7 +14,7 @@ namespace ChartAppAvalonia
 
         public override void OnFrameworkInitializationCompleted()
         {
-            // Par défaut on peut forcer le thème clair
+            // Par dÃ©faut on peut forcer le thÃ¨me clair
             RequestedThemeVariant = Avalonia.Styling.ThemeVariant.Light;
 
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)

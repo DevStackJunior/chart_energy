@@ -8,6 +8,9 @@ namespace ChartAppAvalonia
         public MainWindow()
         {
             InitializeComponent();
+
+            // Associer le ViewModel
+            DataContext = new MainWindowViewModel();
         }
     }
 }
