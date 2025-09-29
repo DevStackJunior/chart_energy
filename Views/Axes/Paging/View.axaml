@@ -1,0 +1,31 @@
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+    xmlns:vm="using:Chart_Energy.ViewModelsSamples.Axes.Paging"
+    x:Class="Chart_Energy.Views.Axes.Paging.View"
+    x:DataType="vm:ViewModel"
+    Title="LiveCharts Paging Example"
+    Width="800"
+    Height="600">
+ 
+  <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+ 
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+            <Button Command="{Binding GoToPage1Command}" Content="Page 1" />
+            <Button Command="{Binding GoToPage2Command}" Content="Page 2" />
+            <Button Command="{Binding GoToPage3Command}" Content="Page 3" />
+            <Button Command="{Binding SeeAllCommand}" Content="Clear" />
+        </StackPanel>
+ 
+        <lvc:CartesianChart
+            Grid.Row="1"
+            Series="{Binding Series}"
+            XAxes="{Binding XAxes}"
+            ZoomMode="X" />
+  </Grid>
+</Window>
